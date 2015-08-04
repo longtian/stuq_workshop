@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="js/common.js" type="text/javascript"></script>
+</head>
+<body><pre><script type="text/javascript">
+
+    function A() {
+        with(document){
+            console.log(body);
+        }
+        run(100);
+    }
+
+    function B() {
+        eval('1+1');
+        run(100);
+    }
+
+    function C() {
+        try{
+            run(100);
+        }catch(e){
+
+        }
+    }
+
+    console.profile('main');
+
+    A();
+    B();
+    C();
+
+    console.profileEnd('main');
+
+</script></pre></body>
+</html>
