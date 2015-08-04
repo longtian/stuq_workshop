@@ -1,5 +1,7 @@
 # 《JavaScript 应用程序性能分析》
 
+> 《JavaScript 应用程序性能分析》课程的相关资料，包括课程大纲，示例代码和讲义
+
 ## 难度
 中级
 
@@ -34,3 +36,7 @@ https://github.com/wyvernnot/javascript_performance_measurement
 
 V8 之旅： 垃圾回收器
 http://newhtml.net/v8-garbage-collection/
+
+## 全部资料下载
+
+[zip](https://github.com/wyvernnot/stuq_workshop/zipball/gh-pages)
