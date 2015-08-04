@@ -1,15 +1,13 @@
-# STUQ 
-# JavaScript 应用程序性能分析
+# 《JavaScript 应用程序性能分析》
 
 ## 难度
-初级
+中级
 
 ## 面向人群
- 
 JavaScript 工程师
 
 ## 课程简介
-本次课程主要介绍了 JavaScript 应用程序性能分析的原理和操作步骤。适合想了解如何分析 JavaScript 应用程序性能的工程师。第三章和第四章分别适合前端工程师 和 Node.JS 工程师阅读。最后一章，结合可视化技术，深入介绍了 cpuprofile 的数据结构和利用。
+本次课程主要介绍了 JavaScript 应用程序性能分析的原理和操作步骤。适合想了解如何分析 JavaScript 应用程序性能的工程师。
 
 ## 课程背景介绍：
 JavaScript 应用程序分析主要有三种手段 Profile, HeapSnapshot, 和 GC 日志。
