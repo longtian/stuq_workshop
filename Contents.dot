@@ -2,12 +2,12 @@ digraph{
 	rankdir=LR
 
 	"JavaScript 应用程序性能分析"->"JavaScript","Profile","Heap","GC"
-  	"JavaScript"->"新的应用","引擎"
-	  "新的应用"->"和Docker相结合构建微服务","物联网"
-	  "引擎"->"V8","IE Edge"
+  	"JavaScript"->"新的应用"
+	"新的应用"->"Maker","Docker"
 
-	"Profile"->"Profile 分析性能的原理"->"Sample 和 Instrumentation 的区别","栈空间"
-	"Profile"->"生成 .cpuprofile 文件"
+	"Profile"->"Profile的常见形式"->"Sampling 和 Instrumentation 的区别","栈空间"
+	"Profile"->"JavaScript如何实现插桩"->"alert","setTimeout"
+	"Profile"->"生成 .cpuprofile 文件"->"代码里开启Profile","导出.cpuprofile文件"
 	"Profile"->"理解 .cpuprofile 文件"->"火焰图","OneProfile"
 
 	"Heap"   ->"v8 内存管理" ->"内存","堆的构成"

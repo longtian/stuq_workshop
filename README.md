@@ -37,6 +37,8 @@ https://github.com/wyvernnot/javascript_performance_measurement
 V8 之旅： 垃圾回收器
 http://newhtml.net/v8-garbage-collection/
 
+Memory Profiling
+https://github.com/thlorenz/v8-perf/blob/master/memory-profiling.md
 ## 全部资料下载
 
 [zip](https://github.com/wyvernnot/stuq_workshop/zipball/gh-pages)
