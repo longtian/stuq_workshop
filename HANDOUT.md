@@ -50,7 +50,7 @@ background-image: url(images/f1.jpg)
 
 ---
 
-# 本课程会介绍
+# 本课内容
 
 --
 
@@ -201,7 +201,7 @@ console.profileEnd([NAME]);
 
 --
 
-2\. `head` 指向一个结点，官方的名字叫`CpuProfileNode`，同时它的 `children` 指向子结点, 因此是一个嵌套结构
+2\. `head` 指向一个结点，对应 v8 类 `CpuProfileNode`，同时它的 `children` 指向子结点, 因此是一个嵌套结构
 
 --
 
@@ -292,12 +292,24 @@ background-image: url(images/fractal.jpg)
 
 # 如何生成 Heap Snapshot
 
-- 浏览器
+- ### Chrome Dev Tools
 
-- Node.JS
-
+- ### Node.JS
 
 [https://github.com/bnoordhuis/node-heapdump](https://github.com/bnoordhuis/node-heapdump)
+
+```sh
+npm install heapdump
+```
+
+```js
+var heapdump = require('heapdump');
+
+heapdump.writeSnapshot(function(err, filename) {
+  console.log('dump written to', filename);
+});
+```
+
 
 ---
 
