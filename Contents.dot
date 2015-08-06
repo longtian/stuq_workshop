@@ -1,18 +1,20 @@
 digraph{
 	rankdir=LR
 
-	"JavaScript 应用程序性能分析"->"JavaScript","Profile","Heap","GC"
-  	"JavaScript"->"新的应用"
-	"新的应用"->"Maker","Docker"
+	"JavaScript 性能分析"->"JavaScript和新技术的结合","CPU Profile","Heap Snapshot","GC"
+  	"JavaScript和新技术的结合"->"Maker","Docker"
 
-	"Profile"->"Profile的常见形式"->"Sampling 和 Instrumentation 的区别","栈空间"
-	"Profile"->"JavaScript如何实现插桩"->"alert","setTimeout"
-	"Profile"->"生成 .cpuprofile 文件"->"代码里开启Profile","导出.cpuprofile文件"
-	"Profile"->"理解 .cpuprofile 文件"->"火焰图","OneProfile"
+	"CPU Profile"->"Profile的常见形式"->"Instrumentation & Sampling"
+	"Instrumentation & Sampling"->"JavaScript如何实现插桩"->"alert","setTimeout"
+	"Instrumentation & Sampling"->"插桩是脏活累活"->"采样"
 
-	"Heap"   ->"v8 内存管理" ->"内存","堆的构成"
-	"Heap"   ->"生成 .heapsnapshot 文件"
-	"Heap"   ->"理解 .heapsnapshot 文件"->"OneHeap"
+	"CPU Profile"->"可用的Profilers"->"Chrome Dev Tools","Node-Inspector","v8-profiler"
+	"CPU Profile"->"生成 .cpuprofile 文件"->"代码里开启Profile","导出.cpuprofile文件"
+	"CPU Profile"->"理解 .cpuprofile 文件"->"OneProfile可视化","原理"
 
-	"GC"     ->"基本概念","算法"
+	"Heap Snapshot"   ->"Heap的构成"
+	"Heap Snapshot"   ->"生成 .heapsnapshot 文件"
+	"Heap Snapshot"   ->"理解 .heapsnapshot 文件"->"OneHeap可视化"
+
+	"GC"     ->"GC会导致程序暂停","Retaining Path","定位 DOM 内存泄漏"
 }

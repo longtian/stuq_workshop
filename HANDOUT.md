@@ -393,7 +393,7 @@ class:middle,center
 ---
 class:middle,center
 
-#\#3 定位 DOM 内存泄漏实战
+#\#3 定位 DOM 内存泄漏
 
 
 
