@@ -4,75 +4,69 @@ class: center,middle
 
 王龑
 
+OneAPM工作，是一家提供性能管理软件和服务的公司。
+
+主要负责 Node.JS 应用性能监控软件的研发工作。
+
+高兴 StuQ
+
+通过分享，JavaScript 性能分析手段，内存不断上涨，卡顿的时候 ，大家了解工具，不在手足无措。
+
+为了帮助大家更好的了解这些工具的原理，我为课程准备了一个工具箱，不需要安装，网页程序，HTML5文件，可视化
+
+MIT 开源 前端，NodeJS工程师
+，即使不了解 v8 原理，性能分析工程师，轻松上手，不再觉得，困难
+
 [.fa.fa-github.big[]](https://github.com/wyvernnot/stuq_workshop)
 
 ---
 
-# JavaScript 和新技术的结合
+# JavaScript 最新的发展 和新技术的结合
 
---
+干货，结合我自己的兴趣 ，工作，聊一聊 JavaScript 发展，新技术的结合
 
-### Maker
 
-- `cylon.js` 控制机器人
+上个月 深圳 举办第四届，JS开发者大会，嘉宾带来了 智能硬件，前端 AudioAPI，后端`cylon.js` LED矩阵 ，mBot。
+CNode.JS 控制机器人 新添加一个模块，很开兴，点亮一个灯，成就感。
 
-- `mosca` 物联网 Broker
+物联网 MQTT协议和 socket.io，订阅/发布 ，到达率服务质量，中央节点，`mosca`  物联网网关 物联网 Broker
 
---
+工作性质的需要，兼容不同的 NodeJS 版本。 眼泪掉下来 0.8 0.10 0.12 ios 1 2 ；
+`Docker` 解决难题，前一家公司，虚拟化 IaaS，成功的把创建时间从一星期缩短到几分钟
+;秒级
 
-### Docker
+NodeJS异步特性，微服务，伸缩性,
 
-- TravisCI 持续集成
+应用打包发布， Sinopia，Ghost,DaoCloud
 
---
-
-- `is-docker` 检测执行环境
-
---
-
-- 应用发布
-
---
-
-- DaoCloud
-
----
-class:bottom,inverse
-background-image: url(images/f1.jpg)
-
---
-
-需要解决这些问题
-
-- 执行效率
-- 内存占用
-- 分析工具
+未来 JavaScript 将会有更广泛的应用。需要解决这些问题，执行效率，内存占用 为什么性能分析
 
 ---
 
 # 本课内容
 
---
-
 ### 1. CPU Profile 
-
---
-
 ### 2. Heap Snapshot
-
---
-
 ### 3. GC
 
 ---
 
 # CPU Profile 的常见形式
 
-- ### Instrumentation & Sampling 
+Instrumentation & Sampling  插桩 & 采样
 
---
 
-- ### 插桩 & 采样
+## 程序插桩，最早是由J.C. Huang 教授提出的，它是在保证被测程序原有逻辑完整性的基础上在程序中插入一些探针（又称为“探测仪”），通过探针的执行并抛出程序运行的特征数据，通过对这些数据的分析，可以获得程序的控制流和数据流信息，进而得到逻辑覆盖等动态信息，从而实现测试目的的方法。
+
+---
+## 黑客帝国 机器乌贼
+
+漫游，上报，次数，时间，参数，频率
+
+
+SQL 慢查询
+
+外部调用
 
 ---
 
@@ -127,6 +121,16 @@ window.setTimeout = function () {
 class:inverse,middle,center
 background-image: url(images/trap.jpg)
 
+HTTP Server
+
+文件系统
+
+DNS
+
+中间件的支持
+
+
+
 # 插桩是脏活累活
 
 .right[
@@ -134,16 +138,16 @@ background-image: url(images/trap.jpg)
 ]
 
 ---
-class:middle,center
 
-#采样
-
----
 class:center,inverse
 
 ![Xray of banana](images/banana.gif)
 
 ---
+
+#采样
+
+v8 引擎，定时的采样
 
 #可用的 Profilers
 
@@ -152,11 +156,6 @@ class:center,inverse
 - ### Node-Inspector
 
 - ### v8-profiler
-
----
-class:middle,center
-
-# \[DEMO\]
 
 ---
 
@@ -241,11 +240,7 @@ class:center
 
 在左边的 FlameChart 来上一刀 .del[切糕]
 
---
-
 此时采样到的调用栈为 `匿名函数->C->B->run`
-
---
 
 于是 `run` 的 `tickCount` 加1
 
@@ -397,14 +392,7 @@ background-image: url(images/gc.png)
 class:middle,center
 
 #\#1 GC会导致程序暂停
-
----
-class:middle,center
-
 #\#2 Retaining Path
----
-class:middle,center
-
 #\#3 定位 DOM 内存泄漏
 
 
