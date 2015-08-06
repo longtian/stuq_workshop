@@ -2,20 +2,31 @@
 
 > 《JavaScript 性能分析》课程的相关资料，包括课程大纲，示例代码和讲义
 
+## 讲义
+
+[地址](http://wyvernnot.github.io/stuq_workshop/slides.html)
+
 ## 难度
+
 中级
 
 ## 面向人群
+
 JavaScript 工程师
 
 ## 课程简介
-本次课程主要介绍了 JavaScript 应用程序性能分析的原理和操作步骤。适合想了解如何分析 JavaScript 应用程序性能的工程师。
+
+本次课程主要介绍了 JavaScript 应用程序性能分析的原理和操作步骤。
+适合想了解如何分析 JavaScript 应用程序性能的工程师。
 
 ## 课程背景介绍：
+
 JavaScript 应用程序分析主要有三种手段 CPU Profile, HeapSnapshot, 和 GC 日志。
 
 ## 学习前需掌握的知识：
-JavaScript 基础
+
+- JavaScript 基础
+- Chrome Dev Tools 的使用
 
 ## 课程大纲：
 
@@ -40,6 +51,12 @@ http://newhtml.net/v8-garbage-collection/
 Memory Profiling
 https://github.com/thlorenz/v8-perf/blob/master/memory-profiling.md
 
-## 全部资料下载
+## 相关工具
+
+[OneProfile](http://wyvernnot.github.io/javascript_performance_measurement/heap_snapshot/)
+
+[OneHeap](http://wyvernnot.github.io/javascript_performance_measurement/cpuprofile_topology/)
+
+## 下载源代码
 
 [zip](https://github.com/wyvernnot/stuq_workshop/zipball/gh-pages)
